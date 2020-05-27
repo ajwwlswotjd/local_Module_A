@@ -1,0 +1,19 @@
+[1]
+- 사진 : specialist1.jpg
+- 이름 : 전문가1
+- 아이디 : specialist1
+
+[2]
+- 사진 : specialist2.jpg
+- 이름 : 전문가2
+- 아이디 : specialist2
+
+[3]
+- 사진 : specialist3.jpg
+- 이름 : 전문가3
+- 아이디 : specialist3
+
+[4]
+- 사진 : specialist4.jpg
+- 이름 : 전문가4
+- 아이디 : specialist4

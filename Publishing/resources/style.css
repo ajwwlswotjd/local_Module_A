@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import "fontawesome/css/font-awesome.min.css";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	position: relative;
+	/*background-color: #ddd;*/
+}
+
+#visual {
+	width: 100%;
+	position: relative;
+	height: auto;
+}
+
+.visual-part {
+	width: 100%;
+	position: relative;
+}
+
+.visual-top {
+	/*background-color: #98a4b4;*/
+	background-color: #827655;
+	height: 500px;
+}
+
+.visual-bottom {
+	border-bottom: 1px solid #ddd;
+	height: 200px;
+}
+
+.visual-img-container {
+	width: 600px;
+	height: 360px;
+	background-color: #ddd;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -100px;
+}
+
+.visual-img-container > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
