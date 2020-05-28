@@ -8,15 +8,40 @@
 </head>
 <body>
 	<header>
-		
+		<div class="logo">로고</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="#">홈</a></li>
+				<li><a href="#">온라인 집들이</a></li>
+				<li><a href="#">스토어</a></li>
+				<li><a href="#">전문가</a></li>
+				<li><a href="#">시공 견적</a></li>
+			</ul>
+		</nav>
+		<div class="user-ui">
+			<div class="user-ui-container">
+				<button class="user-login">LOG IN</button>
+				<button class="user-join">SIGN UP</button>
+			</div>
+		</div>
 	</header>
 	<section id="visual">
 		<div class="visual-top visual-part">
 			<h1 class="visual-title">DECORATE MY HOUSE</h1>
 			<div class="visual-border-bottom"></div>
 			<div class="visual-text">
-				Welcome! You can 
-			</div>
+				Do you want to live in attractive house? Welcome! Here are many experts to help you.
+				<br>
+				You can share your Know-how, and buy some props to decorate house.
+ 			</div>
+ 			<div class="visual-slide-btn-box">
+ 				<button>
+ 					<i class="fa fa-chevron-left"></i>
+ 				</button>
+ 				<button>
+ 					<i class="fa fa-chevron-right"></i>
+ 				</button>
+ 			</div>
 			<div class="visual-img-container">
 				<img src="resources/img1.jpg" alt="visual_img" title="비주얼 이미지">
 				<img src="resources/img2.jpg" alt="visual_img" title="비주얼 이미지">
@@ -25,8 +50,54 @@
 		</div>
 
 		<div class="visual-bottom visual-part">
-				
+			<p class="visual-bottom-text">
+				"Design is to make time and space by putting something in a place where there is time and space"
+				<br>
+				<span>우치다 시게루(Uchida Shigeru)</span>
+			</p>
 		</div>
 	</section>
 </body>
-<!-- </html> -->
+</html>
+
+
+<!-- <!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+ @keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+ 
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider div img { width: 20%; float: left; }
+div#slider div { 
+  position: relative;
+  width: 500%;
+  animation: 10s slidy ease-in-out infinite; 
+}
+  </style>
+ </head>
+ <body>
+  <div id="slider">
+<div>
+<img src="1.jpg" alt="">
+<img src="2.jpg" alt="">
+<img src="3.jpg" alt="">
+<img src="2.jpg" alt="">
+<img src="1.jpg" alt="">
+</div>
+</div>
+ </body>
+</html> -->
