@@ -1,5 +1,7 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 @import "fontawesome/css/font-awesome.min.css";
+/* 폰트어썸 임포트 */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,14 +17,96 @@ li {
 	list-style: none;
 }
 
+/*헤더 영역*/
+
 header {
 	width: 100%;
 	height: 60px;
 	position: relative;
 	display: flex;
 	align-items: center;
-	/*background-color: #333030;*/
 }
+
+.logo {
+	width: 150px;
+	height: 40px;
+	background-color: #ddd;
+	position: relative;
+	left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+header > nav > ul.desktop {
+	width: auto;
+	/* background-color: #ddd; */
+	display: flex;
+	margin-left: 20px;
+}
+
+header > nav > ul.desktop > li {
+	margin: 0 20px;
+	border-bottom: 2px solid transparent;
+}
+
+header > nav > ul.desktop > li > a {
+	color: #333030;
+	font-weight: bolder;
+	font-size: 14px;
+}
+
+header > nav > ul.desktop > li.active {
+	border-bottom: 2px solid #694e10;
+}
+
+header > nav > ul.desktop > li.active > a {
+	color: #694e10;
+}
+
+.user-ui {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: auto;
+}
+
+.user-ui-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.user-ui-container > button {
+	width: 90px;
+	height: 35px;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;
+	outline: none;
+}
+
+.user-ui-container > .user-login {
+	color: #497ee5;
+	background: none;
+	font-size: 13px;
+}
+
+.user-ui-container > .user-join {
+	background-color: #497ee5;
+	color: #f7f7f7;
+	border-radius: 20px;
+	margin-right: 15px;
+}
+
+/*헤더 영역 끝*/
+
+/*비주얼 시작 */
 
 #visual {
 	width: 100%;
@@ -36,8 +120,6 @@ header {
 }
 
 .visual-top {
-	/*background-color: #827655;*/
-	/*background-color: #694e10;*/
 	background-image: linear-gradient(to right,#0008,#0009), url("bgimg4.jpg");
 	background-size: cover;	
 	height: 500px;
@@ -188,83 +270,9 @@ header {
 	color: #666;
 }
 
-.logo {
-	width: 150px;
-	height: 40px;
-	background-color: #ddd;
-	position: relative;
-	left: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bolder;
-	cursor: pointer;
-}
+/* 비주얼섹션 끝 */
 
-header > nav > ul.desktop {
-	width: auto;
-	/* background-color: #ddd; */
-	display: flex;
-	margin-left: 20px;
-}
-
-header > nav > ul.desktop > li {
-	margin: 0 20px;
-	border-bottom: 2px solid transparent;
-}
-
-header > nav > ul.desktop > li > a {
-	color: #333030;
-	font-weight: bolder;
-	font-size: 14px;
-}
-
-header > nav > ul.desktop > li.active {
-	border-bottom: 2px solid #694e10;
-}
-
-header > nav > ul.desktop > li.active > a {
-	color: #694e10;
-}
-
-.user-ui {
-	position: absolute;
-	right: 0;
-	height: 100%;
-	width: auto;
-}
-
-.user-ui-container {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
-.user-ui-container > button {
-	width: 90px;
-	height: 35px;
-	font-size: 12px;
-	border: none;
-	cursor: pointer;
-	font-weight: bolder;
-	outline: none;
-}
-
-.user-ui-container > .user-login {
-	color: #497ee5;
-	background: none;
-	font-size: 13px;
-}
-
-.user-ui-container > .user-join {
-	background-color: #497ee5;
-	color: #f7f7f7;
-	border-radius: 20px;
-	margin-right: 15px;
-}
-
+/* 집들이 영역 시작 */
 
 section#housewarming {
 	position: relative;
@@ -363,6 +371,10 @@ section#housewarming {
 .housewarming-item.housewarming-more:hover {
 	background-color: #86661c;
 }
+
+/*집들이 영역 끝*/
+
+/*전문가 영역 */
 
 section#exp-area {
 	width: 100%;
@@ -479,8 +491,13 @@ section#exp-area > a:hover {
 	border:none;
 	color: #fff;
 	font-size: 25px;
+	outline: none;
 	cursor: pointer;
 }
+
+/*전문가 영역 끝 */
+
+/*시공후기 영역*/
 
 section#construction-review {
 	text-align: center;
@@ -645,6 +662,10 @@ section#construction-review > a:hover {
 	text-decoration: underline;
 }
 
+/*시공후기 영역 끝 */
+
+/*푸터 디자인*/
+
 footer {
 	width: 100%;
 	height: 50px;
@@ -656,9 +677,15 @@ footer {
 	align-items: center;
 }
 
+/*푸터 디자인 끝*/
+
+/*모바일 전용 요소 감추기*/
+
 .mobile {
 	display: none;
 }
+
+/*모바일 제작*/
 
 @media (min-width: 320px) and (max-width: 480px){
 
@@ -848,4 +875,10 @@ footer {
 		font-size: 12px;
 		height: 40px;
 	}
+
+	.review-top > h1 {
+		font-size: 30px;
+	}
 }
+
+/*모바일 제작 끝*/
