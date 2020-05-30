@@ -717,7 +717,8 @@ footer {
 		color: #333030;
 		right: 20px;
 	}
-
+	
+	.nav-mobile-box:hover,
 	.nav-mobile-bars:hover + .nav-mobile-box {
 		right: 0;
 	}
