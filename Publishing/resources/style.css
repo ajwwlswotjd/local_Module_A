@@ -37,7 +37,9 @@ header {
 
 .visual-top {
 	/*background-color: #827655;*/
-	background-color: #694e10;
+	/*background-color: #694e10;*/
+	background-image: linear-gradient(to right,#0008,#0009), url("bgimg4.jpg");
+	background-size: cover;	
 	height: 500px;
 }
 
@@ -269,6 +271,7 @@ section#housewarming {
 	width: 100%;
 	margin: 0 auto;
 	height: 600px;
+	background-color: #f7f7f7;
 }
 
 #housewarming > h1 {
@@ -364,8 +367,9 @@ section#housewarming {
 section#exp-area {
 	width: 100%;
 	position: relative;
-	height: 1000px;
-	background-color: #f7f7f7;
+	height: 600px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	text-align: center;
 }
 
@@ -403,14 +407,7 @@ section#exp-area > a:hover {
 	width: 300px;
 	height: 300px;
 	box-shadow: 1px 2px 3px 2px #0001;
-	background-color: #ddd;
-	transform-style: preserve-3d;
-	transition: .5s;
-}
-
-
-.exp-item-front {
-
+	/*background-color: #ddd;*/
 }
 
 .exp-item-page {
@@ -422,11 +419,239 @@ section#exp-area > a:hover {
 	backface-visibility: hidden;
 }
 
-.exp-item-front {
-	background-color: pink;
+.exp-item-card {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition: 0.5s;
+	transform-style: preserve-3d; 
+}
+
+.exp-item-front > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .exp-item-behind {
-	background-color: coral;
 	transform: rotateY(180deg);
+}
+
+.exp-item:hover .exp-item-card {
+	transform: rotateY(180deg);
+}
+
+.exp-item-behind-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	color: #fff;
+}
+
+.exp-item-behind-container > i {
+	font-size: 100px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.exp-behind-text {
+	position: relative;
+	top: 190px;
+}
+
+.exp-behind-name {
+	font-size: 14px;
+	color: #f7f7f7;
+}
+
+.exp-behind-id {
+	font-size: 19px;
+	font-weight: bolder;
+}
+
+.exp-item-btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: none;
+	border:none;
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+section#construction-review {
+	text-align: center;
+	width: 100%;
+	position: relative;
+	height: 1250px;
+	background-color: #f7f7f7;
+}
+
+.review-top {
+	width: 100%;
+	height: 600px;
+	background-image: linear-gradient(to right,#0008,#0009), url("bgimg3.jpg");
+	background-size: cover;	
+	position: relative;
+}
+
+.review-top > h1 {
+	color: #fff;
+	text-align: right;
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	font-size: 40px;
+}
+
+h1.review-title {
+	text-align: center;
+	font-size: 25px;
+	position: relative;
+	top: 50px;
+}
+
+.review-box {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 0 auto;
+	height: auto;
+}
+
+.review-item {
+	width: 45%;
+	min-height: 400px;
+	background-color: #fff;
+	position: relative;
+	top: 100px;
+	border-radius: 10px;
+}
+
+.review-item > img.review-writer {
+	position: absolute;
+	left: -50px;
+	top: 30px;
+	border : 1px solid white;
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.review-item > .writer-info {
+	position: relative;
+	top: 60px;
+	margin: 0 auto;
+	text-align: left;
+	width: 70%;
+}
+
+.review-name {
+	font-size: 18px;
+	color: #333030;
+}
+
+.review-id {
+	font-size: 14px;
+	color: #666;
+	text-decoration: underline;
+}
+
+.review-content {
+	position: relative;
+	top: 80px;
+	height: auto;
+	text-align: center;
+	width: 70%;
+	font-size: 18px;
+	font-weight: bolder;
+	margin: 0 auto;
+}
+
+.review-cost {
+	position: relative;
+	top: 100px;
+	width: 68%;
+	margin: 0 auto;
+	color: #999;
+	display: flex;
+}
+
+.review-cost > i {
+	color: #666;
+	font-size: 17px;
+	margin-right: 5px;
+}
+
+
+.review-grade {
+	position: absolute;
+	right: 0;
+}
+
+.review-border-bottom {
+	width: 70%;
+	height: 1px;
+	margin: 0 auto;
+	position: relative;
+	top: 120px;
+	background-color: #ddd;
+}
+
+.review-exp-info {
+	position: relative;
+	top: 140px;
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.review-exp-title {
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	top: 130px;
+	font-size: 14px;
+	color: #ddd;
+}
+
+.review-exp-img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 100%;
+	
+}
+
+.review-exp-text {
+	position: relative;
+}
+
+section#construction-review > a {
+	color: #497ee5;
+	top: 50px;
+	position: relative;
+	font-size: 16px;
+}
+
+section#construction-review > a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: #333030;
+	font-size: 14px;
+	color: #f4f5f9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
